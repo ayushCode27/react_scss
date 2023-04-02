@@ -1,0 +1,48 @@
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/mixins';
+
+.header {
+  position: absolute;
+  width: 100%;
+
+  nav {
+    @include flex-center;
+    justify-content: space-between;
+    font-family: $font-poppins;
+  }
+
+  .menu {
+    @include flex-center;
+
+    .menu-icon {
+      font-size: 70px;
+      color: $header-color;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.logo {
+  h1 {
+    margin-left: 1rem;
+  }
+}
+
+.right {
+  ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3rem;
+    align-items: center;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $header-color;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
