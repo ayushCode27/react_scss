@@ -5,6 +5,8 @@
 .header {
   position: absolute;
   width: 100%;
+  color: $main-color;
+  z-index: 100;
 
   nav {
     @include flex-center;
@@ -17,7 +19,7 @@
 
     .menu-icon {
       font-size: 70px;
-      color: $header-color;
+      color: $main-color;
       cursor: pointer;
       margin-left: 1rem;
     }
@@ -40,7 +42,7 @@
     li {
       a {
         text-decoration: none;
-        color: $header-color;
+        color: $main-color;
         margin-left: 1rem;
       }
     }

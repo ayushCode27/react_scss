@@ -1,11 +1,11 @@
 import { MenuOutlined } from '@material-ui/icons';
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './styles/Header.scss';
 
 const Header = () => {
   return (
-    <div className='header'>
+    <header className='header'>
       <nav className='nav-container'>
         <div className='menu'>
           <MenuOutlined className='menu-icon' />
@@ -17,14 +17,14 @@ const Header = () => {
 
         <div className="right">
           <ul>
-            <li><Link href="/places">Places</Link></li>
-            <li><Link href="/pricing">Pricing</Link></li>
-            <li><Link href="/signup">Sign Up</Link></li>
-            <li><Link href="/sponsors">Sponsors</Link></li>
+            <li><a href="/places">Places</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

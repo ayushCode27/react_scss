@@ -1,0 +1,51 @@
+@import './variables/mixins';
+@import './variables/colors';
+@import './variables/fonts';
+
+section {
+  height: 90vh;
+  margin: 15px;
+  overflow: hidden;
+  font-family: $font-poppins;
+  position: relative;
+}
+
+.slide {
+  @include flex-center;
+  justify-content: center;
+  width: 100%;
+}
+.slides {
+  img {
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .places {
+    position: absolute;
+    font-size: 5rem;
+    color: $main-color;
+    left: 10%;
+    top: 35%;
+    font-weight: 900;
+    text-shadow: 10px 0px 30px $header-color;
+  }
+
+  .status {
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    color: $main-color;
+    font-size: 2rem;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    color: $main-color;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
