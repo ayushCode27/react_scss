@@ -7,10 +7,10 @@ section {
   margin: 15px;
   overflow: hidden;
   font-family: $font-poppins;
-  position: relative;
 }
 
 .slide {
+  position: relative;
   @include flex-center;
   justify-content: center;
   width: 100%;
@@ -47,5 +47,35 @@ section {
     color: $main-color;
     font-size: 1.1rem;
     font-weight: 400;
+  }
+}
+
+.back{
+  position:absolute;
+  left: 2%;
+  top:50%;
+  color: $main-color;
+  cursor: pointer;
+}
+.forward{
+  position:absolute;
+  right: 2%;
+  top:50%;
+  color: $main-color;
+  cursor: pointer;
+}
+
+.buttons{
+  position: absolute;
+  bottom: 25%;
+  left:10%;
+
+  button{
+    padding: 10px 30px;
+    border: 3px solid $main-color;
+    background-color: transparent;
+    color: $main-color;
+    text-transform: uppercase;
+    margin:0 2rem;
   }
 }
