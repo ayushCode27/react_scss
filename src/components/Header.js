@@ -1,6 +1,6 @@
 import { MenuOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './styles/Header.scss';
 import { menuData } from '../Data';
 
@@ -25,16 +25,16 @@ const Header = () => {
         <div className='right'>
           <ul>
             <li>
-              <a href='/places'>Places</a>
+              <Link to='/places'>Places</Link>
             </li>
             <li>
-              <a href='/pricing'>Pricing</a>
+              <Link to='/pricing'>Pricing</Link>
             </li>
             <li>
-              <a href='/signup'>Collections</a>
+              <Link to='/signup'>Collections</Link>
             </li>
             <li>
-              <a href='/sponsors'>Sponsors</a>
+              <Link to='/sponsors'>Sponsors</Link>
             </li>
           </ul>
         </div>
@@ -45,7 +45,7 @@ const Header = () => {
           {menuData.map((item, idx) => (
             <div className='container' key={idx}>
               <li className={item.className}>
-                <a href={item.path}>{item.text}</a>
+                <Link to={item.path}>{item.text}</Link>
               </li>
             </div>
           ))}

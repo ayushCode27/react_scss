@@ -24,7 +24,7 @@ section {
 
   .places {
     position: absolute;
-    font-size: 5rem;
+    font-size: 6rem;
     color: $main-color;
     left: 10%;
     top: 35%;
@@ -37,12 +37,12 @@ section {
     top: 52%;
     left: 10%;
     color: $main-color;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .bottom {
     position: absolute;
-    bottom: 0%;
+    bottom: 2%;
     left: 2%;
     color: $main-color;
     font-size: 1.1rem;
@@ -50,32 +50,42 @@ section {
   }
 }
 
-.back{
-  position:absolute;
+.back {
+  position: absolute;
   left: 2%;
-  top:50%;
+  top: 50%;
   color: $main-color;
   cursor: pointer;
 }
-.forward{
-  position:absolute;
+.forward {
+  position: absolute;
   right: 2%;
-  top:50%;
+  top: 50%;
   color: $main-color;
   cursor: pointer;
 }
 
-.buttons{
+.buttons {
   position: absolute;
   bottom: 25%;
-  left:10%;
+  left: 10%;
 
-  button{
-    padding: 10px 30px;
+  button {
+    padding: 20px 60px;
+    font-size: 1.2rem;
     border: 3px solid $main-color;
     background-color: transparent;
     color: $main-color;
     text-transform: uppercase;
-    margin:0 2rem;
+    margin: 0 2rem;
+    transition: 0.25s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main-color;
+      color: $header-color;
+      transform: scale(105%);
+      transition: 0.25s ease-in;
+    }
   }
 }
