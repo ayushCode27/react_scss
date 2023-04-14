@@ -1,0 +1,49 @@
+@import './variables/colors';
+@import './variables/fonts';
+
+.pricing {
+  background-color: $header-color;
+  color: $main-color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $font-poppins;
+
+  h1{
+    font-size: 3rem;
+  }
+}
+
+.cart-container {
+  display: flex;
+
+
+  .tour {
+    text-align: center;
+    font-size: 1.1rem;
+    border: 2px solid $main-color;
+    padding: 10px;
+    margin: 20px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  button{
+    background-color: transparent;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: $main-color;
+    border: 1px solid $main-color;
+
+    &:hover{
+      background-color: $main-color;
+      color: $header-color;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import './App.scss';
 import Header from './components/Header';
 import Section from './components/Section';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import { Data } from './Data';
 import Second from './Second';
+import Footer from './components/Footer';
+import Pricing from './components/Pricing';
 
 const router = createBrowserRouter([
   {
@@ -11,10 +13,25 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Header />
-        <Section slides={Data} />
-        <Second/>
+        <Outlet />
+        <Footer />
       </div>
     ),
+    children: [
+      {
+        path: '/',
+        element: (
+          <>
+            <Section slides={Data} />
+            <Second />
+          </>
+        ),
+      },
+      {
+        path: '/pricing',
+        element: <Pricing />,
+      },
+    ],
   },
 ]);
 
