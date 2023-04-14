@@ -38,7 +38,7 @@ export const Data = [
     },
     {
         text:'Gallery',
-        path : '/gallery',
+        path : '#gallery',
         className : 'menu-data'
      },
      {

@@ -7,7 +7,7 @@ import '../src/components/styles/Second.scss';
 
 const Second = () => {
   return (
-    <section className='second'>
+    <section className='second' id='gallery'>
       <h1>Gallery</h1>
       <div className='images'>
         <div>

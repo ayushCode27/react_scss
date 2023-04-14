@@ -15,7 +15,7 @@ const Section = ({ slides }) => {
   };
 
   return (
-    <section>
+    <section >
       <div className='slide'>
         <ArrowBack className='back' onClick={prevSlide}/>
         <ArrowForward className='forward' onClick={nextSlide}/>
